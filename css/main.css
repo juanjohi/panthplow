@@ -1,198 +1,226 @@
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: poppins;
-        scroll-behavior: smooth;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+
+.about-us {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: rgba(40, 40, 40, 1);
+    box-sizing: border-box;
+    padding: 30px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.about-us:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(4deg);
+}
+
+.properties {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: rgb(255, 174, 0);
+    box-sizing: border-box;
+    padding: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.properties:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(4deg);
+}
+
+.contacts {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: rgb(94, 141, 106);
+    box-sizing: border-box;
+    padding: 30px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.contacts:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: skewY(-4deg);
+}
+
+.reviews {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    padding: 30px;
+    color: white;
+    margin-bottom: 0px;
+    padding: 30px 0;
+}
+
+.reviews:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(-4deg);
+}
+
+@media (max-width:560px) {
+    .review {
+        font-size: 14px;
+        font-weight: 600
     }
-    
-    .about-us {
-        position: relative;
-        width: 100%;
-        height: 400px;
-        background: rgba(40, 40, 40, 1);
-        box-sizing: border-box;
-        padding: 30px;
-        color: white;
-        margin-bottom: 90px;
+    .name {
+        font-size: 13px
     }
-    
-    .about-us:after {
+    .job {
+        font-size: 10px
+    }
+    .right {
+        font-size: 12px
+    }
+    .left {
+        font-size: 12px
+    }
+}
+
+.reviews .carousel-indicators {
+    bottom: -30px;
+    right: 0;
+    margin: 0
+}
+
+.reviews .carousel-indicators [data-bs-target] {
+    height: 10px;
+    border: 2px solid black;
+    width: 10px;
+    background-color: inherit;
+    border-radius: 50%
+}
+
+.reviews .carousel-indicators .active {
+    border: 2px solid transparent;
+    background-color: #17929b
+}
+
+.reviews .carousel-inner {
+    max-width: 800px;
+}
+
+.reviews .carousel-inner i .far {
+    height: 100%;
+    width: 100%;
+    left: 50px;
+}
+
+.reviews .carousel-control-next,
+.reviews .carousel-control-prev {
+    position: relative
+}
+
+.counter-box {
+    display: block;
+    background: #3acf87;
+    padding: 40px 20px 37px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.counter-box p {
+    margin: 5px 0 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.counter-box i {
+    font-size: 60px;
+    margin: 0 0 15px;
+    color: #ffffff
+}
+
+.counter {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #666;
+    line-height: 28px
+}
+
+@media (max-width:480px) {
+    .about-us p {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background: inherit;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform-origin: top left;
-        transform: skewY(4deg);
-    }
-    
-    .properties {
-        position: relative;
-        width: 100%;
-        height: 480px;
-        background: rgb(255, 174, 0);
-        box-sizing: border-box;
-        padding: 30px;
-        color: white;
-        margin-bottom: 15px;
-    }
-    
-    .properties:after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background: inherit;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform-origin: top right;
-        transform: skewY(4deg);
-    }
-    
-    .contacts {
-        position: relative;
-        width: 100%;
-        height: 350px;
-        background: rgb(94, 141, 106);
-        box-sizing: border-box;
-        padding: 30px;
-        color: white;
-        margin-bottom: 100px;
-    }
-    
-    .contacts:after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background: inherit;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform-origin: bottom right;
-        transform: skewY(-4deg);
-    }
-    
-    .reviews {
-        position: relative;
-        width: 100%;
-        height: 500px;
-        background: #0F2027;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        padding: 30px;
-        color: white;
-        margin-bottom: 0px;
-        padding: 30px 0;
-    }
-    
-    .reviews:after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background: inherit;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform-origin: top left;
-        transform: skewY(-4deg);
-    }
-    
-    @media (max-width:560px) {
-        .review {
-            font-size: 14px;
-            font-weight: 600
-        }
-        .name {
-            font-size: 13px
-        }
-        .job {
-            font-size: 10px
-        }
-        .right {
-            font-size: 12px
-        }
-        .left {
-            font-size: 12px
-        }
-    }
-    
-    .reviews .carousel-indicators {
-        bottom: -30px;
-        right: 0;
-        margin: 0
-    }
-    
-    .reviews .carousel-indicators [data-bs-target] {
-        height: 10px;
-        border: 2px solid black;
-        width: 10px;
-        background-color: inherit;
-        border-radius: 50%
-    }
-    
-    .reviews .carousel-indicators .active {
-        border: 2px solid transparent;
-        background-color: #17929b
-    }
-    
-    .reviews .carousel-inner {
-        max-width: 800px;
-    }
-    
-    .reviews .carousel-inner i .far {
-        height: 100%;
-        width: 100%;
-        left: 50px;
-    }
-    
-    .reviews .carousel-control-next,
-    .reviews .carousel-control-prev {
-        position: relative
-    }
-    
-    .counter-box {
-        display: block;
-        background: #3acf87;
-        padding: 40px 20px 37px;
         text-align: center;
-        cursor: pointer;
+        left: 20px;
     }
-    
-    .counter-box p {
-        margin: 5px 0 0;
-        padding: 0;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500
+    .about-us img {
+        display: none;
     }
-    
-    .counter-box i {
-        font-size: 60px;
-        margin: 0 0 15px;
-        color: #ffffff
+    .about-us {
+        height: 500px;
+        margin-bottom: 50px;
     }
-    
-    .counter {
-        display: block;
-        font-size: 32px;
-        font-weight: 700;
-        color: #666;
-        line-height: 28px
+    .properties {
+        overflow: auto;
+        height: 440px;
     }
+    .contacts {
+        overflow: auto;
+        height: 440px;
+        margin-bottom: 40px;
+        padding-bottom: 0px;
+    }
+    .properties::-webkit-scrollbar-track {
+        background: orange;
+    }
+}
