@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
     padding: 30px;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .about-us:after {
@@ -35,12 +35,12 @@ body {
 .properties {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 520px;
     background: rgb(255, 174, 0);
     box-sizing: border-box;
     padding: 30px;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .properties:after {
@@ -58,7 +58,7 @@ body {
     transform: skewY(4deg);
 }
 
-.contacts {
+.progressive {
     position: relative;
     width: 100%;
     height: 350px;
@@ -66,10 +66,10 @@ body {
     box-sizing: border-box;
     padding: 30px;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
-.contacts:after {
+.progressive:after {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -80,14 +80,14 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    transform-origin: bottom right;
-    transform: skewY(-4deg);
+    transform-origin: top left;
+    transform: skewY(4deg);
 }
 
 .reviews {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background: #0F2027;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
@@ -110,8 +110,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    transform-origin: top left;
-    transform: skewY(-4deg);
+    transform-origin: top right;
+    transform: skewY(4deg);
 }
 
 @media (max-width:560px) {
@@ -214,7 +214,7 @@ body {
         overflow: auto;
         height: 440px;
     }
-    .contacts {
+    .progress {
         overflow: auto;
         height: 440px;
         margin-bottom: 40px;
