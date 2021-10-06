@@ -58,6 +58,19 @@ body {
     transform: skewY(4deg);
 }
 
+.contacts {
+    text-align: center;
+    font-size: 1.1em;
+    position: relative;
+    width: 100%;
+    height: 330px;
+    background: rgba(76, 105, 97, 0.945);
+    box-sizing: border-box;
+    padding: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
 .progressive {
     position: relative;
     width: 100%;
@@ -214,13 +227,16 @@ body {
         overflow: auto;
         height: 440px;
     }
-    .progress {
+    .progressive {
         overflow: auto;
         height: 440px;
         margin-bottom: 40px;
         padding-bottom: 0px;
     }
-    .properties::-webkit-scrollbar-track {
-        background: orange;
+}
+
+@media (max-width: 560px) {
+    [data-aos-delay] {
+        transition-delay: 0s !important;
     }
 }
