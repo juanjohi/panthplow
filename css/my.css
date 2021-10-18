@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
     padding: 30px;
     color: white;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
 
 .main:after {
@@ -54,4 +54,13 @@ body {
     left: 0;
     transform-origin: top right;
     transform: skewY(4deg);
+}
+
+@media (max-width:480px) {
+    .main {
+        height: 600px;
+    }
+    .media {
+        height: 1600px;
+    }
 }
